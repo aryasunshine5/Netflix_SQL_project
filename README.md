@@ -14,6 +14,7 @@ The data for this project is sourced from the Kaggle dataset:
 (https://github.com/aryasunshine5/Netflix_SQL_project/blob/main/netflix_titles.xlsx)
 
 ## Schema
+```sql
 DROP TABLE IF EXISTS netflix;
 CREATE TABLE netflix 
 	(
@@ -29,16 +30,18 @@ CREATE TABLE netflix
 	duration VARCHAR(15),
 	listed_in VARCHAR(100),
 	description VARCHAR(300)
-	)
+	);
+```
 
  ## Business problems and their solutions
  
-**1.Count the Number of Movies vs TV Shows**
-'''sql
+### 1.Count the Number of Movies vs TV Shows
+
+```sql
 SELECT type, COUNT (*) as total_content
 FROM netflix
 GROUP BY type
-'''
+```
 
 
 
