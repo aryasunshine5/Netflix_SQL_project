@@ -32,12 +32,13 @@ CREATE TABLE netflix
 	)
 
  ## Business problems and their solutions
- 1. **Count the Number of Movies vs TV Shows**
-***sql
+ 
+**1.Count the Number of Movies vs TV Shows**
+'''sql
 SELECT type, COUNT (*) as total_content
 FROM netflix
 GROUP BY type
-***
+'''
 
 
 
